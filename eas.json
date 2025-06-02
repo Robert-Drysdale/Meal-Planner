@@ -1,20 +1,21 @@
 {
-  "build": {
-    "development": {
-      "developmentClient": true,
-      "distribution": "internal"
-    },
-    "preview": {
-      "distribution": "internal",
-      "ios": {
-        "simulator": true
+  "expo": {
+    "name": "Meal Planner",
+    "slug": "meal-planner",
+    "version": "1.0.0",
+    "sdkVersion": "48.0.0",
+    "platforms": ["ios", "android"],
+    "icon": "./assets/icon.png",
+    "extra": {
+      "eas": {
+        "projectId": "meal-planner"
       }
     },
-    "production": {
-      "distribution": "store",
-      "ios": {
-        "simulator": false
-      }
-    }
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ]
   }
 }
